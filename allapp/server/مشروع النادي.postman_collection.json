@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "fae421bd-04a9-4050-92ca-91bfad1b748c",
+		"name": "مشروع النادي",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "تسجيل الزبائن في الموقع لا يشطرط التوكن",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c95c4047-4879-4700-aa70-e6123e218eb8",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Welcaome\",\n\t\"email\":\"a7007001@gmail.com\",\n\t\"Passward\":\"ddad\",\n\t\"phone\":\"0502566462\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					]
+				},
+				"description": "تستعمل للتسجيل الزبائن في الموقع"
+			},
+			"response": []
+		},
+		{
+			"name": "تسجيل الدخول تعطي توكن",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"email\":\"thisaisyy@maisseeaggsl.com\",\n\t\"Passward\":\"ddssad\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				},
+				"description": "تستخدم للتسجيل الدخول للزبائن و الموظفين"
+			},
+			"response": []
+		},
+		{
+			"name": "تستعمل للعرض  التمارين لا بد من استعمال توكن",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZWEyMzkwNjAyOGFiOTM5Zjg3Y2U5ZmUiLCJpYXQiOjE1ODc3MzI0NzQsImV4cCI6MTU4Nzg0MDQ3NH0.lj3uP8jtGDD8kH5eMSGyfyPoS43cgje75Ks1PRRrg5Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/showTraning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"showTraning"
+					]
+				},
+				"description": "لا بد من استعمال التوكن المعطى  من تسجيل الدخول"
+			},
+			"response": []
+		},
+		{
+			"name": "تقوم هذا باضافة الموظفين",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ZWExZWExYWE5NzVhMjFhMjg0ZmQ5N2UiLCJpYXQiOjE1ODc2ODkxNjMsImV4cCI6MTcyNzU0OTE2M30.0IAAz2U6VWF1D4TO4k3UCkBvj5ZTbyegSAZJqjYnnAI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Welcaome\",\n    \"email\": \"a7007001@FitnessAtHome.com\",\n    \"Passward\": \"Aa6243240\",\n    \"phone\": \"0502566462\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/registerStaff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"registerStaff"
+					]
+				},
+				"description": "تقوم الهذا بتسجيل الموظفين"
+			},
+			"response": []
+		},
+		{
+			"name": "تستعمل هذا للاضافة التمارين لا بد من استعامل توكين خاص بالموظفين من ممكن تجاهليها",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/addTraning",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"addTraning"
+					]
+				},
+				"description": "لا بد من تسجيل الدخول بحساب الموظفين"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

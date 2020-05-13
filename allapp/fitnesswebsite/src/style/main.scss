@@ -1,0 +1,659 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.innerWrapper {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+h2,
+h4 {
+  font-family: "Abril Fatface", serif;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0 0 30px 0;
+}
+
+/* NAV SECTION */
+
+.companyName {
+  padding: 18px 17px 14px 15%;
+  margin: 0;
+  float: left;
+  color: #fff;
+  width: 45%;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: left;
+  font-variant: small-caps;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  width: 55%;
+  float: right;
+}
+
+header nav ul {
+  float: right;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-right: 20px solid rgba(0, 0, 0, 0.7);
+}
+
+header nav ul li {
+  float: left;
+  margin: 0;
+  display: inline;
+  width: 25%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header nav ul li:hover {
+  background: none;
+  font-style: bold;
+  transform: scale(1.2);
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 25px 20px;
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+
+header nav ul li a:focus {
+  outline: none;
+}
+
+/* HEAD SECTION */
+
+header {
+  background: url("../images/hero.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero {
+  text-align: center;
+  text-shadow: 1px 0 2px #595859;
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+  margin: 0;
+  padding-top: 200px;
+  font-family: "Abril Fatface", serif;
+  color: #fff;
+}
+
+.hero h3 {
+  padding-bottom: 250px;
+  font-family: "Quicksand", sans-serif;
+  font-style: italic;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .companyName {
+    width: 100%;
+    text-align: center;
+    padding: 4% 4%;
+  }
+
+  .mainNav {
+    width: 100%;
+  }
+
+  header nav ul {
+    border: none;
+  }
+
+  header nav ul li a {
+    padding: 25px 2%;
+  }
+}
+
+/*Footer*/
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 16px;
+  direction: ltr;
+  background: url("..//images/hederbackground1125.jpg");
+}
+
+footer .container {
+  display: flex;
+  color: white;
+  font-family: sans-serif;
+}
+a.navbar-item-logout {
+  position: absolute;
+  right: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+/*Sign in*/
+.main {
+  background-color: #ffffff;
+  width: 400px;
+  height: 400px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 6px 5px 35px 71px rgba(0, 0, 0, 0.14);
+}
+.sign {
+  padding-top: 40px;
+  color: #f55a10;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+.un {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+.pass {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: "Ubuntu", sans-serif;
+}
+.submit {
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #b02727, #ea7523);
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 2%;
+  font-size: 13px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+#dont_have_an_account {
+  text-align: center;
+}
+/**************sign up Section**************/
+
+form.SginUpSection {
+  position: relative;
+  top: 15px;
+  background: linear-gradient(to right, #b02727, #ea7523);
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  background: black;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  border: 5px solid #ca541f;
+  /* margin-bottom: 32px; */
+  background-color: #f1f1f1;
+  text-align: center;
+  border-top: none;
+}
+@media only screen and (max-width: 600px) {
+  i.navbar-item-logo {
+    display: none;
+  }
+
+  form.SginUpSection {
+    width: min-content;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
+///////////////////AddtraningSection
+
+form.AddTrainingSection {
+  background: linear-gradient(to right, #b02727, #ea7523);
+}
+
+///////////////////////////////////////////////////////SectionCards
+
+section.exerciseCard {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: #d2dbdd;
+  display: flex;
+  /* display: block; */
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  /*display: -webkit-flex;*/
+  justify-content: center;
+  -webkit-justify-content: center;
+  max-width: max-content;
+}
+
+.card--1 .card__img,
+.card--1 .card__img--hover {
+  background-image: url("../images/ArmsExercise.png");
+}
+
+.card--2 .card__img,
+.card--2 .card__img--hover {
+  background-image: url("../images/BackExercise.png");
+}
+.card--3 .card__img,
+.card--3 .card__img--hover {
+  background-image: url("../images/ShoulderExercises.png");
+}
+.card--4 .card__img,
+.card--4 .card__img--hover {
+  background-image: url("../images/CoreExercise.png");
+}
+.card--5 .card__img,
+.card--5 .card__img--hover {
+  background-image: url("../images/ChestExercises.png");
+}
+.card--6 .card__img,
+.card--6 .card__img--hover {
+  background-image: url("../images/ShoulderExercises.png");
+  transform: scaleX(-1);
+}
+
+.card__like {
+  width: 18px;
+}
+
+.card__clock {
+  width: 15px;
+  vertical-align: middle;
+  fill: #ad7d52;
+}
+.card__time {
+  font-size: 12px;
+  color: #ad7d52;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.card__clock-info {
+  float: right;
+}
+
+.card__img {
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card__info-hover {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+.card {
+  margin-right: 25px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1, 1.1);
+}
+
+.card__info {
+  z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.card__by {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ad7d52;
+}
+
+.card:hover .card__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card:hover .card__info {
+  background-color: transparent;
+  position: relative;
+}
+
+.card:hover .card__info-hover {
+  opacity: 1;
+}
+///////////////////ContactUs section
+$red: #e74c3c;
+
+html,
+body {
+  background: #f1f1f1;
+}
+.ContactUs {
+  margin-top: 11px;
+  padding-top: 15px;
+  width: 100%;
+  height: 600px;
+  background: url("..//images/fitness-wallpaper-5.jpg");
+}
+h1 {
+  text-align: center;
+  color: #a8a8a8;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+
+  input,
+  textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: "Merriweather", sans-serif;
+
+    resize: none;
+  }
+
+  #input-submit {
+    color: white;
+    background: $red;
+    cursor: pointer;
+  }
+  #input-name {
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+  }
+  #input-email {
+    margin-top: 5px;
+  }
+
+  textarea {
+    height: 126px;
+  }
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+/////////////////videoSection
+h5 {
+  font-size: 3.5rem;
+  font-family: "Abril Fatface", serif;
+}
+section.videoSection {
+  display: flex;
+  justify-content: center;
+}
+.vidcontainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.flip3D {
+  width: 100px;
+  height: 300px;
+  margin: 15px;
+  /* float: left; */
+  display: flow-root;
+  flex-basis: 50%;
+}
+.flip3D > .front {
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  background: linear-gradient(to right, #b02727, #ea7523);
+  width: 340px;
+  height: 300px;
+  border-radius: 7px;
+  margin: 10px;
+  padding: 5px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.5s linear 0s;
+  -webkit-transition: -webkit-transform 0.5s linear 0s;
+}
+
+.flip3D > .back {
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  background: linear-gradient(to right, #b02727, #ea7523);
+  width: 340px;
+  height: 300px;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 10px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.5s linear 0s;
+  -webkit-transition: -webkit-transform 0.5s linear 0s;
+}
+
+.flip3D:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+  -webkit-transform: perspective(600px) rotateY(0deg);
+}
+@media only screen and (max-width: 800px) {
+  .vidcontainer {
+    display: flow-root;
+  }
+  .flip3D {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+  header nav ul li a {
+    font-size: 0.6rem;
+    padding: 32px 3%;
+  }
+  .main {
+    background-color: #ffffff;
+    width: 261px;
+    height: 373px;
+  }
+}
